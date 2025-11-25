@@ -22,8 +22,8 @@ title: Virtualization is romantic
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   仮想化が持つロマンと技術的ワクワクを語るブログ。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Virtualization_is_romantic" # the subpath of your site, e.g. /blog
+url: "https://orgaicom.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 
