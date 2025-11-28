@@ -9,17 +9,20 @@
 ### ■ 2. Alpine Linux のイメージを準備
 
 1. Alpine Linux の **aarch64 ISO** をダウンロード
-   　例：`alpine-standard-xxx-aarch64.iso`
+    https://alpinelinux.org/downloads/
+    alpine-virt-3.22.2-aarch64.iso
+
 2. iPadの「ファイル」アプリ等に保存
 
 ---
 
 ### ■ 3. UTM SE で仮想マシンを作成
 
-1. UTM SEを起動 →「Create New Virtual Machine」
-2. 「Virtualize」→「Linux」
-3. 「Browse」から先ほどのISOを選択
-4. 仮想マシンの設定
+1. UTM SEを起動 →「新規仮想マシンを作成」
+2. 「新規マシン」→ 「Linux」
+3. スクリーンショットのように設定
+4. 「選択」から先ほどのISOを選択
+5. 仮想マシンの設定
 
    * メモリ：2GB〜4GB推奨
    * CPUコア数：2〜4
