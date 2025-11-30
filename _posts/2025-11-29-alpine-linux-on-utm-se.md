@@ -2,7 +2,7 @@
 layout: post
 title: "iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）"
 date: 2025-11-29 10:00:00 +0900
-published: false
+published: true
 categories: [仮想化]
 tags: [UTM SE, 仮想化, iPad, Alpine Linux]
 ---
