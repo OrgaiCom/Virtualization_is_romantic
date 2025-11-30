@@ -9,96 +9,216 @@ tags: [UTM SE, 仮想化, iPad, Alpine Linux]
 
 ## はじめに
 
-この記事では、iPadのUTM SE上で軽量なLinuxディストリビューションであるAlpine Linuxを導入する手順を、全手順のスクリーンショットを交えて詳しく解説します。
+この記事では、iPadのUTM SE上で軽量なLinuxディストリビューションであるAlpine Linuxを導入する手順を、全手順のスクリーンショット（全25枚）を交えて詳しく解説します。
+画像と説明が一致している、正確な情報で更新しました。
 
-## 1. Alpine Linux のイメージを準備
+## インストール手順
 
-まず、[Alpine Linuxの公式サイト](https://alpinelinux.org/downloads/)から、**aarch64**版のISOイメージをダウンロードします。`alpine-virt-`で始まるファイル名が仮想マシン向けです。
-
-![Alpine Linux公式サイトのダウンロードページ。aarch64版を選択。]({{ site.baseurl }}/images/IMG_0413.jpeg)
-
-ダウンロードしたISOファイルは、iPadの「ファイル」アプリ内の分かりやすい場所に保存しておきます。
-
-## 2. UTM SE で仮想マシンを作成
-
-次に、UTM SEアプリでAlpine Linuxをインストールするための仮想マシンを新規作成します。
-
-1.  UTM SEを起動し、右上の「+」ボタンをタップして新規仮想マシンを作成します。
-    ![UTM SEのメイン画面。「+」をタップして新規仮想マシンを作成。]({{ site.baseurl }}/images/IMG_0414.jpeg)
-
-2.  実行方法として「仮想化」を選択します。
-    ![新規マシン作成の選択肢で「仮想化」を選択。]({{ site.baseurl }}/images/IMG_0415.jpeg)
-
-3.  OSの種類として「Linux」を選択します。
-    ![仮想マシンのOSとして「Linux」を選択。]({{ site.baseurl }}/images/IMG_0416.jpeg)
-
-4.  「起動ISOイメージ」の「選択」をタップし、手順1で保存したAlpine LinuxのISOファイルを選択します。
-    ![起動ISOイメージとしてダウンロードしたAlpine LinuxのISOファイルを選択。]({{ site.baseurl }}/images/IMG_0417.jpeg)
-
-5.  ハードウェアリソースを設定します。今回はメモリ2GB、CPUコア2、ストレージ10GBとしました。
-    ![仮想マシンのメモリ、CPUコア数、ストレージ容量を設定。]({{ site.baseurl }}/images/IMG_0418.jpeg)
-
-6.  ホストOSとの共有ディレクトリを設定できますが、今回はスキップします。「次へ」をタップします。
-    ![共有ディレクトリは任意で設定。今回はスキップ。]({{ site.baseurl }}/images/IMG_0419.jpeg)
-
-7.  仮想マシンの名前を入力し（例: Alpine）、右上の「保存」をタップします。
-    ![作成する仮想マシンの名前を入力し、「保存」をタップ。]({{ site.baseurl }}/images/IMG_0420.jpeg)
-
-8.  メイン画面に作成した仮想マシンが表示されたら、起動ボタン（▶）をタップして起動します。
-    ![メイン画面に戻り、作成した「Alpine」VMを起動。]({{ site.baseurl }}/images/IMG_0421.jpeg)
-
-## 3. Alpine Linux のインストール
-
-仮想マシンが起動したら、いよいよAlpine Linuxをストレージにインストールします。
-
-1.  コンソールが表示されたら、`localhost login:` に続けて `root` と入力し、Enterキーを押します。（初回はパスワード不要）
-    ![仮想マシン起動後、rootユーザーでログイン。]({{ site.baseurl }}/images/IMG_0422.jpeg)
-
-2.  ログイン後、`setup-alpine` と入力してインストーラーを起動します。
-    ![setup-alpineコマンドでインストールを開始。]({{ site.baseurl }}/images/IMG_0423.jpeg)
-
-3.  **キーボードレイアウトの設定**: `jp` と入力します。
-    ![キーボードレイアウトの選択で「jp」を入力。]({{ site.baseurl }}/images/IMG_0424.jpeg)
-    再度 `jp` を入力して確定します。
-    ![キーボードバリアントの選択で再度「jp」を入力。]({{ site.baseurl }}/images/IMG_0464.jpeg)
-
-4.  **ホスト名の設定**: 好きなホスト名を入力します（例: `alphost`）。
-    ![ホスト名の設定で「alphost」を入力。]({{ site.baseurl }}/images/IMG_0466.jpeg)
-
-5.  **ネットワークの設定**: `eth0` を選択し（デフォルト）、DHCPで自動設定します。
-    ![ネットワークインターフェースの選択。]({{ site.baseurl }}/images/IMG_0467.jpeg)
-
-6.  **rootパスワードの設定**: rootユーザーの新しいパスワードを入力します。
-    ![rootパスワードの設定。]({{ site.baseurl }}/images/IMG_0469.jpeg)
-
-7.  **タイムゾーンの設定**: `Asia/Tokyo` または `Japan` を選択します。
-    ![タイムゾーンの選択。]({{ site.baseurl }}/images/IMG_0470.jpeg)
-
-8.  **ディスクの選択**: インストール先ディスクとして `vda` を選択します。
-    ![インストール先ディスクとして「vda」を選択。]({{ site.baseurl }}/images/IMG_0471.jpeg)
-
-9.  **インストールモードの選択**: どのようにディスクを使用するか問われます。`sys` を選択してディスク全体にインストールします。
-    ![インストールモードとして「sys」を選択。]({{ site.baseurl }}/images/IMG_0473.jpeg)
-    `Erase the above disk(s) and continue?` と確認されるので、`y` を入力します。
-
-10. インストールが完了したら、`poweroff` コマンドで仮想マシンをシャットダウンします。
-    ![インストール完了後、poweroffコマンドでシャットダウン。]({{ site.baseurl }}/images/IMG_0476.jpeg)
-
-## 4. インストール後の初回起動
-
-1.  UTM SEの仮想マシンの設定画面を開き、CD/DVDドライブからISOイメージを取り外します（ドライブをクリア）。
-    ![設定画面でISOイメージを取り外し。]({{ site.baseurl }}/images/IMG_0481.jpeg)
-
-2.  再度仮想マシンを起動します。今度はストレージからAlpine Linuxが起動します。
-    ![ISO取り外し後、再度仮想マシンを起動。]({{ site.baseurl }}/images/IMG_0482.jpeg)
-
-3.  先ほど設定した `root` のパスワードでログインします。
-    ![設定したrootパスワードでログイン。]({{ site.baseurl }}/images/IMG_0483.jpeg)
-
-4.  ログイン後、例えば `apk update` を実行して、パッケージリストが更新できることを確認します。
-    ![ログイン後、apk updateを実行して動作確認。]({{ site.baseurl }}/images/IMG_0484.jpeg)
-
-これで、iPad上のUTM SEにAlpine Linuxのインストールは完了です。お疲れ様でした！
-![最終的なコンソール画面。]({{ site.baseurl }}/images/IMG_0485.jpeg)
+それでは、早速インストール手順を見ていきましょう。
 
 ---
+
+### 1. Alpine Linux 公式サイトのダウンロードページ
+
+iPadで動かすUTMでは`aarch64`アーキテクチャが対応するため、`VIRTUAL`カテゴリの中から「aarch64」のISOイメージをダウンロードします。
+
+![Alpine Linux ダウンロードページ]({{ site.baseurl }}/images/IMG_0413.jpeg)
+
+---
+
+### 2. UTMの「新規仮想マシンを作成」ボタン
+
+UTMを起動し、新しい仮想マシンを作成するために、この「＋」ボタンをタップします。
+
+![「新規仮想マシンを作成」ボタン]({{ site.baseurl }}/images/IMG_0414.jpeg)
+
+---
+
+### 3. 「新規マシン」作成オプション
+
+テンプレートを使わずに、ゼロから仮想マシンを作成するため、「新規マシン」を選択します。
+
+![「新規マシン」オプション]({{ site.baseurl }}/images/IMG_0415.jpeg)
+
+---
+
+### 4. OSの種類の選択
+
+インストールするOSの種類として「Linux」を選択します。
+
+![OSとして「Linux」を選択]({{ site.baseurl }}/images/IMG_0416.jpeg)
+
+---
+
+### 5. ハードウェアのExpert Mode設定
+
+「Expert Mode」をオンにすると、アーキテクチャ、メモリ、CPUコア数などを詳細に設定できます。ここでは`aarch64`、メモリ`2048MB`、CPU`2コア`に設定しています。
+
+![ハードウェアExpert Mode設定]({{ site.baseurl }}/images/IMG_0417.jpeg)
+
+---
+
+### 6. ディスプレイ出力設定
+
+グラフィックに関する設定です。「ハードウェアOpenGLアクセラレーション」を有効にするか選択できます。
+
+![ディスプレイ出力設定]({{ site.baseurl }}/images/IMG_0418.jpeg)
+
+---
+
+### 7. 起動イメージの種類の選択
+
+Linuxをどうやって起動するかを選択します。新規インストールの場合は「Boot from ISO image」を選択し、「選択...」をタップしてISOファイルを探します。
+
+![起動イメージの種類を選択]({{ site.baseurl }}/images/IMG_0419.jpeg)
+
+---
+
+### 8. 起動ISOイメージの指定完了
+
+手順7で「選択...」をタップし、ダウンロードしておいたAlpine LinuxのISOイメージ (`alpine-virt-3.22.2-aarch64.iso`) を指定し終えた状態です。
+
+![起動ISOイメージの指定完了]({{ site.baseurl }}/images/IMG_0420.jpeg)
+
+---
+
+### 9. ストレージサイズの設定
+
+仮想マシンに割り当てるディスクのサイズを設定します。ここでは`10 GiB`に設定しています。
+
+![ストレージサイズの設定]({{ site.baseurl }}/images/IMG_0421.jpeg)
+
+---
+
+### 10. 共有ディレクトリの設定
+
+ホストOS（iPad）と仮想マシン（Alpine Linux）の間でファイルを共有するためのフォルダを指定できます。今回は設定せずに進みます。
+
+![共有ディレクトリの設定]({{ site.baseurl }}/images/IMG_0422.jpeg)
+
+---
+
+### 11. 仮想マシンの概要確認と保存
+
+これまでの設定内容を最終確認し、仮想マシンの名前（例: Alpine Linux ARM64）を入力して「保存」をタップします。
+
+![概要確認と保存]({{ site.baseurl }}/images/IMG_0423.jpeg)
+
+---
+
+### 12. 仮想マシンの起動
+
+UTMのメイン画面に作成された仮想マシンが表示されます。右側の「再生」ボタンをタップして仮想マシンを起動します。
+
+![仮想マシンの起動]({{ site.baseurl }}/images/IMG_0424.jpeg)
+
+---
+
+### 13. Alpine Linux起動とログインプロンプト
+
+仮想マシンが起動し、コンソールに「Welcome to Alpine Linux」のメッセージが表示され、ログインを促す `localhost login:` プロンプトが表示された状態です。
+
+![Alpine Linux起動とログインプロンプト]({{ site.baseurl }}/images/IMG_0464.jpeg)
+
+---
+
+### 14. rootでのログイン成功
+
+`root`と入力してログインに成功した直後の画面です。`setup-alpine`コマンドでセットアップを開始するよう案内が表示されています。
+
+![rootでのログイン成功]({{ site.baseurl }}/images/IMG_0466.jpeg)
+
+---
+
+### 15. `setup-alpine` - キーボードレイアウト設定
+
+`setup-alpine`コマンドを実行し、対話式セットアップが始まりました。最初の質問であるキーボードレイアウト（Keymap）で`jp`を選択しています。
+
+![キーボードレイアウト設定]({{ site.baseurl }}/images/IMG_0467.jpeg)
+
+---
+
+### 16. `setup-alpine` - ホスト名・ネットワーク・rootパスワード設定
+
+ホスト名を`alphost`に、ネットワーク(eth0)をDHCPに、そしてrootユーザーのパスワードを設定している場面です。
+
+![ホスト名・ネットワーク・rootパスワード設定]({{ site.baseurl }}/images/IMG_0469.jpeg)
+
+---
+
+### 17. `setup-alpine` - タイムゾーン設定
+
+システムのタイムゾーンを尋ねる質問に対し、`Japan`と入力して設定しています。
+
+![タイムゾーン設定]({{ site.baseurl }}/images/IMG_0470.jpeg)
+
+---
+
+### 18. `setup-alpine` - プロキシ・NTP・ミラー設定
+
+プロキシは無し、NTPクライアントは`busybox`、パッケージミラーは`1`（公式CDN）を選択しています。
+
+![プロキシ・NTP・ミラー設定]({{ site.baseurl }}/images/IMG_0471.jpeg)
+
+---
+
+### 19. `setup-alpine` - 一般ユーザーの作成
+
+`root`とは別の、普段使いの一般ユーザー（ここでは`lintaro`）を作成し、パスワードを設定しています。
+
+![一般ユーザーの作成]({{ site.baseurl }}/images/IMG_0473.jpeg)
+
+---
+
+### 20. `setup-alpine` - ディスクインストールの完了
+
+OSをディスク(`vda`)に`sys`モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。
+
+![ディスクインストールの完了]({{ site.baseurl }}/images/IMG_0476.jpeg)
+
+---
+
+### 21. インストール後のISOイメージ取り出し（作業前）
+
+システムのシャットダウン後、UTMの仮想マシン設定画面に戻りました。CD/DVDドライブにインストール用ISOが挿入されたままになっています。
+
+![ISOイメージ取り出し（作業前）]({{ site.baseurl }}/images/IMG_0481.jpeg)
+
+---
+
+### 22. インストール後のISOイメージ取り出し（作業後）
+
+CD/DVDドライブからISOイメージを取り出し、「（空）」になった状態です。再起動する前に必ずこの作業が必要です。
+
+![ISOイメージ取り出し（作業後）]({{ site.baseurl }}/images/IMG_0482.jpeg)
+
+---
+
+### 23. ディスクからの初回起動
+
+ISOを取り外した後、UTMメイン画面で再度「再生」ボタンをタップし、ディスクにインストールされたOSを起動します。
+
+![ディスクからの初回起動]({{ site.baseurl }}/images/IMG_0483.jpeg)
+
+---
+
+### 24. ディスク起動後のログインプロンプト
+
+ディスクから正常にOSが起動しました。ログインプロンプトが、設定したホスト名`alphost login:`に変わっていることが確認できます。
+
+![ディスク起動後のログインプロンプト]({{ site.baseurl }}/images/IMG_0484.jpeg)
+
+---
+
+### 25. 一般ユーザーでのログイン成功
+
+作成した一般ユーザー`lintaro`でログインに成功した場面です。プロンプトが `alphost:~$` となっています。ここから`apk`コマンド等で好きなパッケージを導入していきます。
+
+![一般ユーザーでのログイン成功]({{ site.baseurl }}/images/IMG_0485.jpeg)
+
+---
+
+## まとめ
+
+これで、iPad上のUTM SEにAlpine Linuxの基本的なインストールは完了です。
+ここから `apk` コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！
