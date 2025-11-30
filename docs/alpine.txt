@@ -1,0 +1,55 @@
+技術ブログ用に、できるだけ分かりやすく、手順をまとめてみます。必要でしたら図や補足も追加できますので、お気軽にお知らせください。
+
+---
+
+## iPadのUTM SE 上に Alpine Linux を導入する手順
+
+---
+
+### ■ 2. Alpine Linux のイメージを準備
+
+1. Alpine Linux の **aarch64 ISO** をダウンロード
+    https://alpinelinux.org/downloads/
+    alpine-virt-3.22.2-aarch64.iso
+
+2. iPadの「ファイル」アプリ等に保存
+
+---
+
+### ■ 3. UTM SE で仮想マシンを作成
+
+1. UTM SEを起動 →「新規仮想マシンを作成」
+2. 「新規マシン」→ 「Linux」
+3. スクリーンショットのように設定
+4. 「選択」から先ほどのISOを選択
+5. 仮想マシンの設定
+
+   * メモリ：2GB推奨
+   * CPUコア数：2
+   * ストレージ：10GB以上
+5. 保存して起動
+
+---
+
+### ■ 4. Alpine Linux インストール
+
+1. 起動後、rootでログイン
+2.コンソールに沿ってセットアップ
+   　`setup-alpine`
+3. 途中の質問に回答
+
+   * キーボード：`jp` 2回選択
+   * host name : alphost
+   * ネットワーク：DHCPのままOK
+   * ミラー選択：自動でOK
+   * time zone: Japan
+   * user: lintaro
+   
+4. ディスク設定で **vda** を選択 → sysを選択 → 既存ストレージにインストール
+5. インストール完了後、再起動
+     poweroff コマンドでVMをシャットダウンして、UTM SEの画面から
+   　ISOを取り外して、起動
+
+---
+
+
