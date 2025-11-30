@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-11-30T12:30:34+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-11-30T13:45:17+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
 
 <p>この記事では、iPadのUTM SE上で軽量なLinuxディストリビューションであるAlpine Linuxを導入する手順を、全手順のスクリーンショット（全25枚）を交えて詳しく解説します。
 画像と説明が一致している、正確な情報で更新しました。</p>
@@ -6,6 +6,8 @@
 <h2 id="インストール手順">インストール手順</h2>
 
 <p>それでは、早速インストール手順を見ていきましょう。</p>
+
+<h3> </h3>
 
 <hr />
 
@@ -15,6 +17,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0413.jpeg" alt="Alpine Linux ダウンロードページ" /></p>
 
+<h3 id="-1"> </h3>
+
 <hr />
 
 <h3 id="2-utmの新規仮想マシンを作成ボタン">2. UTMの「新規仮想マシンを作成」ボタン</h3>
@@ -22,6 +26,8 @@
 <p>UTMを起動し、新しい仮想マシンを作成するために、この「＋」ボタンをタップします。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0414.jpeg" alt="「新規仮想マシンを作成」ボタン" /></p>
+
+<h3 id="-2"> </h3>
 
 <hr />
 
@@ -31,6 +37,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0415.jpeg" alt="「新規マシン」オプション" /></p>
 
+<h3 id="-3"> </h3>
+
 <hr />
 
 <h3 id="4-osの種類の選択">4. OSの種類の選択</h3>
@@ -38,6 +46,8 @@
 <p>インストールするOSの種類として「Linux」を選択します。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0416.jpeg" alt="OSとして「Linux」を選択" /></p>
+
+<h3 id="-4"> </h3>
 
 <hr />
 
@@ -47,6 +57,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0417.jpeg" alt="ハードウェアExpert Mode設定" /></p>
 
+<h3 id="-5"> </h3>
+
 <hr />
 
 <h3 id="6-ディスプレイ出力設定">6. ディスプレイ出力設定</h3>
@@ -54,6 +66,8 @@
 <p>グラフィックに関する設定です。「ハードウェアOpenGLアクセラレーション」を有効にするか選択できます。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0418.jpeg" alt="ディスプレイ出力設定" /></p>
+
+<h3 id="-6"> </h3>
 
 <hr />
 
@@ -63,6 +77,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0419.jpeg" alt="起動イメージの種類を選択" /></p>
 
+<h3 id="-7"> </h3>
+
 <hr />
 
 <h3 id="8-起動isoイメージの指定完了">8. 起動ISOイメージの指定完了</h3>
@@ -70,6 +86,8 @@
 <p>手順7で「選択…」をタップし、ダウンロードしておいたAlpine LinuxのISOイメージ (<code class="language-plaintext highlighter-rouge">alpine-virt-3.22.2-aarch64.iso</code>) を指定し終えた状態です。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0420.jpeg" alt="起動ISOイメージの指定完了" /></p>
+
+<h3 id="-8"> </h3>
 
 <hr />
 
@@ -79,6 +97,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0421.jpeg" alt="ストレージサイズの設定" /></p>
 
+<h3 id="-9"> </h3>
+
 <hr />
 
 <h3 id="10-共有ディレクトリの設定">10. 共有ディレクトリの設定</h3>
@@ -86,6 +106,8 @@
 <p>ホストOS（iPad）と仮想マシン（Alpine Linux）の間でファイルを共有するためのフォルダを指定できます。今回は設定せずに進みます。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0422.jpeg" alt="共有ディレクトリの設定" /></p>
+
+<h3 id="-10"> </h3>
 
 <hr />
 
@@ -95,6 +117,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0423.jpeg" alt="概要確認と保存" /></p>
 
+<h3 id="-11"> </h3>
+
 <hr />
 
 <h3 id="12-仮想マシンの起動">12. 仮想マシンの起動</h3>
@@ -103,13 +127,17 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0424.jpeg" alt="仮想マシンの起動" /></p>
 
+<h3 id="-12"> </h3>
+
 <hr />
 
 <h3 id="13-alpine-linux起動とログインプロンプト">13. Alpine Linux起動とログインプロンプト</h3>
 
 <p>仮想マシンが起動し、コンソールに「Welcome to Alpine Linux」のメッセージが表示され、ログインを促す <code class="language-plaintext highlighter-rouge">localhost login:</code> プロンプトが表示された状態です。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0464.jpeg" alt="Alpine Linux起動とログインプロンプト" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0464_cropped.jpeg" alt="Alpine Linux起動とログインプロンプト" /></p>
+
+<h3 id="-13"> </h3>
 
 <hr />
 
@@ -117,7 +145,9 @@
 
 <p><code class="language-plaintext highlighter-rouge">root</code>と入力してログインに成功した直後の画面です。<code class="language-plaintext highlighter-rouge">setup-alpine</code>コマンドでセットアップを開始するよう案内が表示されています。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0466.jpeg" alt="rootでのログイン成功" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0466_cropped.jpeg" alt="rootでのログイン成功" /></p>
+
+<h3 id="-14"> </h3>
 
 <hr />
 
@@ -127,13 +157,17 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0467.jpeg" alt="キーボードレイアウト設定" /></p>
 
+<h3 id="-15"> </h3>
+
 <hr />
 
 <h3 id="16-setup-alpine---ホスト名ネットワークrootパスワード設定">16. <code class="language-plaintext highlighter-rouge">setup-alpine</code> - ホスト名・ネットワーク・rootパスワード設定</h3>
 
 <p>ホスト名を<code class="language-plaintext highlighter-rouge">alphost</code>に、ネットワーク(eth0)をDHCPに、そしてrootユーザーのパスワードを設定している場面です。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0469.jpeg" alt="ホスト名・ネットワーク・rootパスワード設定" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0469_cropped.jpeg" alt="ホスト名・ネットワーク・rootパスワード設定" /></p>
+
+<h3 id="-16"> </h3>
 
 <hr />
 
@@ -143,13 +177,17 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0470.jpeg" alt="タイムゾーン設定" /></p>
 
+<h3 id="-17"> </h3>
+
 <hr />
 
 <h3 id="18-setup-alpine---プロキシntpミラー設定">18. <code class="language-plaintext highlighter-rouge">setup-alpine</code> - プロキシ・NTP・ミラー設定</h3>
 
 <p>プロキシは無し、NTPクライアントは<code class="language-plaintext highlighter-rouge">busybox</code>、パッケージミラーは<code class="language-plaintext highlighter-rouge">1</code>（公式CDN）を選択しています。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0471.jpeg" alt="プロキシ・NTP・ミラー設定" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0471_cropped.jpeg" alt="プロキシ・NTP・ミラー設定" /></p>
+
+<h3 id="-18"> </h3>
 
 <hr />
 
@@ -157,7 +195,9 @@
 
 <p><code class="language-plaintext highlighter-rouge">root</code>とは別の、普段使いの一般ユーザー（ここでは<code class="language-plaintext highlighter-rouge">lintaro</code>）を作成し、パスワードを設定しています。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0473.jpeg" alt="一般ユーザーの作成" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0473_cropped.jpeg" alt="一般ユーザーの作成" /></p>
+
+<h3 id="-19"> </h3>
 
 <hr />
 
@@ -165,7 +205,9 @@
 
 <p>OSをディスク(<code class="language-plaintext highlighter-rouge">vda</code>)に<code class="language-plaintext highlighter-rouge">sys</code>モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0476.jpeg" alt="ディスクインストールの完了" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0476_cropped.jpeg" alt="ディスクインストールの完了" /></p>
+
+<h3 id="-20"> </h3>
 
 <hr />
 
@@ -175,6 +217,8 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0481.jpeg" alt="ISOイメージ取り出し（作業前）" /></p>
 
+<h3 id="-21"> </h3>
+
 <hr />
 
 <h3 id="22-インストール後のisoイメージ取り出し作業後">22. インストール後のISOイメージ取り出し（作業後）</h3>
@@ -182,6 +226,8 @@
 <p>CD/DVDドライブからISOイメージを取り出し、「（空）」になった状態です。再起動する前に必ずこの作業が必要です。</p>
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0482.jpeg" alt="ISOイメージ取り出し（作業後）" /></p>
+
+<h3 id="-22"> </h3>
 
 <hr />
 
@@ -191,13 +237,17 @@
 
 <p><img src="/Virtualization_is_romantic/images/IMG_0483.jpeg" alt="ディスクからの初回起動" /></p>
 
+<h3 id="-23"> </h3>
+
 <hr />
 
 <h3 id="24-ディスク起動後のログインプロンプト">24. ディスク起動後のログインプロンプト</h3>
 
 <p>ディスクから正常にOSが起動しました。ログインプロンプトが、設定したホスト名<code class="language-plaintext highlighter-rouge">alphost login:</code>に変わっていることが確認できます。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0484.jpeg" alt="ディスク起動後のログインプロンプト" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0484_cropped.jpeg" alt="ディスク起動後のログインプロンプト" /></p>
+
+<h3 id="-24"> </h3>
 
 <hr />
 
@@ -205,7 +255,9 @@
 
 <p>作成した一般ユーザー<code class="language-plaintext highlighter-rouge">lintaro</code>でログインに成功した場面です。プロンプトが <code class="language-plaintext highlighter-rouge">alphost:~$</code> となっています。ここから<code class="language-plaintext highlighter-rouge">apk</code>コマンド等で好きなパッケージを導入していきます。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0485.jpeg" alt="一般ユーザーでのログイン成功" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0485_cropped.jpeg" alt="一般ユーザーでのログイン成功" /></p>
+
+<h3 id="-25"> </h3>
 
 <hr />
 

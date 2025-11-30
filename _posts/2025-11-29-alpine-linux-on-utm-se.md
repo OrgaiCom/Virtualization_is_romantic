@@ -5,6 +5,10 @@ date: 2025-11-29 10:00:00 +0900
 published: true
 categories: [仮想化]
 tags: [UTM SE, 仮想化, iPad, Alpine Linux]
+
+
+### &nbsp;
+
 ---
 
 ## はじめに
@@ -16,6 +20,10 @@ tags: [UTM SE, 仮想化, iPad, Alpine Linux]
 
 それでは、早速インストール手順を見ていきましょう。
 
+
+
+### &nbsp;
+
 ---
 
 ### 1. Alpine Linux 公式サイトのダウンロードページ
@@ -23,6 +31,10 @@ tags: [UTM SE, 仮想化, iPad, Alpine Linux]
 iPadで動かすUTMでは`aarch64`アーキテクチャが対応するため、`VIRTUAL`カテゴリの中から「aarch64」のISOイメージをダウンロードします。
 
 ![Alpine Linux ダウンロードページ]({{ site.baseurl }}/images/IMG_0413.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -32,6 +44,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 
 ![「新規仮想マシンを作成」ボタン]({{ site.baseurl }}/images/IMG_0414.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 3. 「新規マシン」作成オプション
@@ -39,6 +55,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 テンプレートを使わずに、ゼロから仮想マシンを作成するため、「新規マシン」を選択します。
 
 ![「新規マシン」オプション]({{ site.baseurl }}/images/IMG_0415.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -48,6 +68,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 
 ![OSとして「Linux」を選択]({{ site.baseurl }}/images/IMG_0416.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 5. ハードウェアのExpert Mode設定
@@ -55,6 +79,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 「Expert Mode」をオンにすると、アーキテクチャ、メモリ、CPUコア数などを詳細に設定できます。ここでは`aarch64`、メモリ`2048MB`、CPU`2コア`に設定しています。
 
 ![ハードウェアExpert Mode設定]({{ site.baseurl }}/images/IMG_0417.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -64,6 +92,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 
 ![ディスプレイ出力設定]({{ site.baseurl }}/images/IMG_0418.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 7. 起動イメージの種類の選択
@@ -71,6 +103,10 @@ UTMを起動し、新しい仮想マシンを作成するために、この「�
 Linuxをどうやって起動するかを選択します。新規インストールの場合は「Boot from ISO image」を選択し、「選択...」をタップしてISOファイルを探します。
 
 ![起動イメージの種類を選択]({{ site.baseurl }}/images/IMG_0419.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -80,6 +116,10 @@ Linuxをどうやって起動するかを選択します。新規インストー
 
 ![起動ISOイメージの指定完了]({{ site.baseurl }}/images/IMG_0420.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 9. ストレージサイズの設定
@@ -87,6 +127,10 @@ Linuxをどうやって起動するかを選択します。新規インストー
 仮想マシンに割り当てるディスクのサイズを設定します。ここでは`10 GiB`に設定しています。
 
 ![ストレージサイズの設定]({{ site.baseurl }}/images/IMG_0421.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -96,6 +140,10 @@ Linuxをどうやって起動するかを選択します。新規インストー
 
 ![共有ディレクトリの設定]({{ site.baseurl }}/images/IMG_0422.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 11. 仮想マシンの概要確認と保存
@@ -103,6 +151,10 @@ Linuxをどうやって起動するかを選択します。新規インストー
 これまでの設定内容を最終確認し、仮想マシンの名前（例: Alpine Linux ARM64）を入力して「保存」をタップします。
 
 ![概要確認と保存]({{ site.baseurl }}/images/IMG_0423.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -112,13 +164,21 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 ![仮想マシンの起動]({{ site.baseurl }}/images/IMG_0424.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 13. Alpine Linux起動とログインプロンプト
 
 仮想マシンが起動し、コンソールに「Welcome to Alpine Linux」のメッセージが表示され、ログインを促す `localhost login:` プロンプトが表示された状態です。
 
-![Alpine Linux起動とログインプロンプト]({{ site.baseurl }}/images/IMG_0464.jpeg)
+![Alpine Linux起動とログインプロンプト]({{ site.baseurl }}/images/IMG_0464_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -126,7 +186,11 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 `root`と入力してログインに成功した直後の画面です。`setup-alpine`コマンドでセットアップを開始するよう案内が表示されています。
 
-![rootでのログイン成功]({{ site.baseurl }}/images/IMG_0466.jpeg)
+![rootでのログイン成功]({{ site.baseurl }}/images/IMG_0466_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -136,13 +200,21 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 ![キーボードレイアウト設定]({{ site.baseurl }}/images/IMG_0467.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 16. `setup-alpine` - ホスト名・ネットワーク・rootパスワード設定
 
 ホスト名を`alphost`に、ネットワーク(eth0)をDHCPに、そしてrootユーザーのパスワードを設定している場面です。
 
-![ホスト名・ネットワーク・rootパスワード設定]({{ site.baseurl }}/images/IMG_0469.jpeg)
+![ホスト名・ネットワーク・rootパスワード設定]({{ site.baseurl }}/images/IMG_0469_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -152,13 +224,21 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 ![タイムゾーン設定]({{ site.baseurl }}/images/IMG_0470.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 18. `setup-alpine` - プロキシ・NTP・ミラー設定
 
 プロキシは無し、NTPクライアントは`busybox`、パッケージミラーは`1`（公式CDN）を選択しています。
 
-![プロキシ・NTP・ミラー設定]({{ site.baseurl }}/images/IMG_0471.jpeg)
+![プロキシ・NTP・ミラー設定]({{ site.baseurl }}/images/IMG_0471_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -166,7 +246,11 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 `root`とは別の、普段使いの一般ユーザー（ここでは`lintaro`）を作成し、パスワードを設定しています。
 
-![一般ユーザーの作成]({{ site.baseurl }}/images/IMG_0473.jpeg)
+![一般ユーザーの作成]({{ site.baseurl }}/images/IMG_0473_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -174,7 +258,11 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 OSをディスク(`vda`)に`sys`モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。
 
-![ディスクインストールの完了]({{ site.baseurl }}/images/IMG_0476.jpeg)
+![ディスクインストールの完了]({{ site.baseurl }}/images/IMG_0476_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -184,6 +272,10 @@ OSをディスク(`vda`)に`sys`モードでインストールする処理が完
 
 ![ISOイメージ取り出し（作業前）]({{ site.baseurl }}/images/IMG_0481.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 22. インストール後のISOイメージ取り出し（作業後）
@@ -191,6 +283,10 @@ OSをディスク(`vda`)に`sys`モードでインストールする処理が完
 CD/DVDドライブからISOイメージを取り出し、「（空）」になった状態です。再起動する前に必ずこの作業が必要です。
 
 ![ISOイメージ取り出し（作業後）]({{ site.baseurl }}/images/IMG_0482.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -200,13 +296,21 @@ ISOを取り外した後、UTMメイン画面で再度「再生」ボタンを�
 
 ![ディスクからの初回起動]({{ site.baseurl }}/images/IMG_0483.jpeg)
 
+
+
+### &nbsp;
+
 ---
 
 ### 24. ディスク起動後のログインプロンプト
 
 ディスクから正常にOSが起動しました。ログインプロンプトが、設定したホスト名`alphost login:`に変わっていることが確認できます。
 
-![ディスク起動後のログインプロンプト]({{ site.baseurl }}/images/IMG_0484.jpeg)
+![ディスク起動後のログインプロンプト]({{ site.baseurl }}/images/IMG_0484_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
@@ -214,7 +318,11 @@ ISOを取り外した後、UTMメイン画面で再度「再生」ボタンを�
 
 作成した一般ユーザー`lintaro`でログインに成功した場面です。プロンプトが `alphost:~$` となっています。ここから`apk`コマンド等で好きなパッケージを導入していきます。
 
-![一般ユーザーでのログイン成功]({{ site.baseurl }}/images/IMG_0485.jpeg)
+![一般ユーザーでのログイン成功]({{ site.baseurl }}/images/IMG_0485_cropped.jpeg)
+
+
+
+### &nbsp;
 
 ---
 
