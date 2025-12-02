@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://orgaicom.github.io/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="https://orgaicom.github.io/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-12-01T12:31:07+00:00</updated><id>https://orgaicom.github.io/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-12-02T14:32:55+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
 
 <p>この記事では、iPadのUTM SE上で軽量なLinuxディストリビューションであるAlpine Linuxを導入する手順を、全手順のスクリーンショット（全25枚）を交えて詳しく解説します。
 画像と説明が一致している、正確な情報で更新しました。</p>
@@ -194,9 +194,9 @@
 
 <h3 id="18-setup-alpine---プロキシntpミラー設定">18. <code class="language-plaintext highlighter-rouge">setup-alpine</code> - プロキシ・NTP・ミラー設定</h3>
 
-<p>プロキシは無し、NTPクライアントは<code class="language-plaintext highlighter-rouge">busybox</code>、パッケージミラーは<code class="language-plaintext highlighter-rouge">1</code>（公式CDN）を選択しています。</p>
+<p>プロキシはデフォルトの<code class="language-plaintext highlighter-rouge">none</code>のまま、NTPクライアントは<code class="language-plaintext highlighter-rouge">busybox</code>、パッケージミラーは<code class="language-plaintext highlighter-rouge">1</code>（公式CDN）を選択しています。ここでは<code class="language-plaintext highlighter-rouge">community</code>リポジトリを有効にしています。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0471_cropped.jpeg" alt="プロキシ・NTP・ミラー設定" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0471.jpeg" alt="プロキシ・NTP・ミラー設定" /></p>
 
 <h3 id="-18"> </h3>
 
@@ -214,9 +214,9 @@
 
 <h3 id="20-setup-alpine---ディスクインストールの完了">20. <code class="language-plaintext highlighter-rouge">setup-alpine</code> - ディスクインストールの完了</h3>
 
-<p>OSをディスク(<code class="language-plaintext highlighter-rouge">vda</code>)に<code class="language-plaintext highlighter-rouge">sys</code>モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。</p>
+<p>OSをディスク(<code class="language-plaintext highlighter-rouge">vda</code>)に<code class="language-plaintext highlighter-rouge">sys</code>モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。この後、<code class="language-plaintext highlighter-rouge">poweroff</code>コマンドを実行してシステムをシャットダウンします。</p>
 
-<p><img src="/Virtualization_is_romantic/images/IMG_0476_cropped.jpeg" alt="ディスクインストールの完了" /></p>
+<p><img src="/Virtualization_is_romantic/images/IMG_0476.jpeg" alt="ディスクインストールの完了" /></p>
 
 <h3 id="-20"> </h3>
 
@@ -266,6 +266,8 @@
 
 <p>作成した一般ユーザー<code class="language-plaintext highlighter-rouge">lintaro</code>でログインに成功した場面です。プロンプトが <code class="language-plaintext highlighter-rouge">alphost:~$</code> となっています。ここから<code class="language-plaintext highlighter-rouge">apk</code>コマンド等で好きなパッケージを導入していきます。</p>
 
+<p><strong>補足:</strong> <code class="language-plaintext highlighter-rouge">apk</code>コマンドはroot権限で実行する必要があります。<code class="language-plaintext highlighter-rouge">su -</code> でrootユーザーに切り替えるか、<code class="language-plaintext highlighter-rouge">doas</code>パッケージをインストールして一般ユーザーから実行できるように設定してください。</p>
+
 <p><img src="/Virtualization_is_romantic/images/IMG_0485_cropped.jpeg" alt="一般ユーザーでのログイン成功" /></p>
 
 <h3 id="-25"> </h3>
@@ -275,7 +277,7 @@
 <h2 id="まとめ">まとめ</h2>
 
 <p>これで、iPad上のUTM SEにAlpine Linuxの基本的なインストールは完了です。
-ここから <code class="language-plaintext highlighter-rouge">apk</code> コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！</p>]]></content><author><name></name></author><category term="仮想化" /><category term="UTM SE" /><category term="仮想化" /><category term="iPad" /><category term="Alpine Linux" /><summary type="html"><![CDATA[はじめに]]></summary></entry><entry><title type="html">UTM SEの魅力：iPadの可能性を広げる魔法</title><link href="https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html" rel="alternate" type="text/html" title="UTM SEの魅力：iPadの可能性を広げる魔法" /><published>2025-11-25T01:00:00+00:00</published><updated>2025-11-25T01:00:00+00:00</updated><id>https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B</id><content type="html" xml:base="https://orgaicom.github.io/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+ここから <code class="language-plaintext highlighter-rouge">apk</code> コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！</p>]]></content><author><name></name></author><category term="仮想化" /><category term="UTM SE" /><category term="仮想化" /><category term="iPad" /><category term="Alpine Linux" /><summary type="html"><![CDATA[はじめに]]></summary></entry><entry><title type="html">UTM SEの魅力：iPadの可能性を広げる魔法</title><link href="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html" rel="alternate" type="text/html" title="UTM SEの魅力：iPadの可能性を広げる魔法" /><published>2025-11-25T01:00:00+00:00</published><updated>2025-11-25T01:00:00+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B</id><content type="html" xml:base="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
 
 <p>「iPadでLinuxを動かしてみたい」</p>
 

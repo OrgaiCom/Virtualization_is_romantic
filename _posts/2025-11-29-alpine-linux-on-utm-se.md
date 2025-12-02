@@ -241,9 +241,9 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 ### 18. `setup-alpine` - プロキシ・NTP・ミラー設定
 
-プロキシは無し、NTPクライアントは`busybox`、パッケージミラーは`1`（公式CDN）を選択しています。
+プロキシはデフォルトの`none`のまま、NTPクライアントは`busybox`、パッケージミラーは`1`（公式CDN）を選択しています。ここでは`community`リポジトリを有効にしています。
 
-![プロキシ・NTP・ミラー設定]({{ site.baseurl }}/images/IMG_0471_cropped.jpeg)
+![プロキシ・NTP・ミラー設定]({{ site.baseurl }}/images/IMG_0471.jpeg)
 
 
 
@@ -265,9 +265,9 @@ UTMのメイン画面に作成された仮想マシンが表示されます。�
 
 ### 20. `setup-alpine` - ディスクインストールの完了
 
-OSをディスク(`vda`)に`sys`モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。
+OSをディスク(`vda`)に`sys`モードでインストールする処理が完了した場面です。「Installation is complete. Please reboot.」と表示されています。この後、`poweroff`コマンドを実行してシステムをシャットダウンします。
 
-![ディスクインストールの完了]({{ site.baseurl }}/images/IMG_0476_cropped.jpeg)
+![ディスクインストールの完了]({{ site.baseurl }}/images/IMG_0476.jpeg)
 
 
 
@@ -326,6 +326,8 @@ ISOを取り外した後、UTMメイン画面で再度「再生」ボタンを�
 ### 25. 一般ユーザーでのログイン成功
 
 作成した一般ユーザー`lintaro`でログインに成功した場面です。プロンプトが `alphost:~$` となっています。ここから`apk`コマンド等で好きなパッケージを導入していきます。
+
+**補足:** `apk`コマンドはroot権限で実行する必要があります。`su -` でrootユーザーに切り替えるか、`doas`パッケージをインストールして一般ユーザーから実行できるように設定してください。
 
 ![一般ユーザーでのログイン成功]({{ site.baseurl }}/images/IMG_0485_cropped.jpeg)
 
