@@ -341,3 +341,18 @@ ISOを取り外した後、UTMメイン画面で再度「再生」ボタンを�
 
 これで、iPad上のUTM SEにAlpine Linuxの基本的なインストールは完了です。
 ここから `apk` コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！
+
+### &nbsp;
+
+---
+
+## おまけ：LXQtデスクトップ環境
+
+以下は、今回インストールしたAlpine LinuxにLXQtデスクトップ環境を導入した際のスクリーンショットです。
+Alpine Linuxでは `setup-desktop` コマンドから `lxqt` などをインストールできますが、iPad上の仮想環境では重く、実用性は低いです。
+
+![LXQtデスクトップ環境 1]({{ site.baseurl }}/images/IMG_0560.png)
+
+![LXQtデスクトップ環境 2]({{ site.baseurl }}/images/IMG_0561.png)
+
+![LXQtデスクトップ環境 3]({{ site.baseurl }}/images/IMG_0562.png)
