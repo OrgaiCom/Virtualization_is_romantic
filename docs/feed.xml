@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-12-02T14:32:55+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/Virtualization_is_romantic/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Virtualization_is_romantic/" rel="alternate" type="text/html" /><updated>2025-12-05T14:34:26+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/feed.xml</id><title type="html">Virtualization is romantic</title><subtitle>仮想化が持つロマンと技術的ワクワクを語るブログ。</subtitle><entry><title type="html">iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）</title><link href="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html" rel="alternate" type="text/html" title="iPadのUTM SE 上に Alpine Linux を導入する手順（全スクリーンショット付き）" /><published>2025-11-29T01:00:00+00:00</published><updated>2025-11-29T01:00:00+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se</id><content type="html" xml:base="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/29/alpine-linux-on-utm-se.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
 
 <p>この記事では、iPadのUTM SE上で軽量なLinuxディストリビューションであるAlpine Linuxを導入する手順を、全手順のスクリーンショット（全25枚）を交えて詳しく解説します。
 画像と説明が一致している、正確な情報で更新しました。</p>
@@ -277,7 +277,22 @@
 <h2 id="まとめ">まとめ</h2>
 
 <p>これで、iPad上のUTM SEにAlpine Linuxの基本的なインストールは完了です。
-ここから <code class="language-plaintext highlighter-rouge">apk</code> コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！</p>]]></content><author><name></name></author><category term="仮想化" /><category term="UTM SE" /><category term="仮想化" /><category term="iPad" /><category term="Alpine Linux" /><summary type="html"><![CDATA[はじめに]]></summary></entry><entry><title type="html">UTM SEの魅力：iPadの可能性を広げる魔法</title><link href="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html" rel="alternate" type="text/html" title="UTM SEの魅力：iPadの可能性を広げる魔法" /><published>2025-11-25T01:00:00+00:00</published><updated>2025-11-25T01:00:00+00:00</updated><id>http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B</id><content type="html" xml:base="http://0.0.0.0:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+ここから <code class="language-plaintext highlighter-rouge">apk</code> コマンドで好きなパッケージを導入し、自分だけの環境を構築していくことができます。お疲れ様でした！</p>
+
+<h3 id="-26"> </h3>
+
+<hr />
+
+<h2 id="おまけlxqtデスクトップ環境">おまけ：LXQtデスクトップ環境</h2>
+
+<p>以下は、今回インストールしたAlpine LinuxにLXQtデスクトップ環境を導入した際のスクリーンショットです。
+Alpine Linuxでは <code class="language-plaintext highlighter-rouge">setup-desktop</code> コマンドから <code class="language-plaintext highlighter-rouge">lxqt</code> などをインストールできますが、iPad上の仮想環境では重く、実用性は低いです。</p>
+
+<p><img src="/Virtualization_is_romantic/images/IMG_0560.png" alt="LXQtデスクトップ環境 1" /></p>
+
+<p><img src="/Virtualization_is_romantic/images/IMG_0561.png" alt="LXQtデスクトップ環境 2" /></p>
+
+<p><img src="/Virtualization_is_romantic/images/IMG_0562.png" alt="LXQtデスクトップ環境 3" /></p>]]></content><author><name></name></author><category term="仮想化" /><category term="UTM SE" /><category term="仮想化" /><category term="iPad" /><category term="Alpine Linux" /><summary type="html"><![CDATA[はじめに]]></summary></entry><entry><title type="html">UTM SEの魅力：iPadの可能性を広げる魔法</title><link href="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html" rel="alternate" type="text/html" title="UTM SEの魅力：iPadの可能性を広げる魔法" /><published>2025-11-25T01:00:00+00:00</published><updated>2025-11-25T01:00:00+00:00</updated><id>http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B</id><content type="html" xml:base="http://localhost:4000/Virtualization_is_romantic/%E4%BB%AE%E6%83%B3%E5%8C%96/2025/11/25/UTM-SE%E3%81%AE%E9%AD%85%E5%8A%9B.html"><![CDATA[<h2 id="はじめに">はじめに</h2>
 
 <p>「iPadでLinuxを動かしてみたい」</p>
 
@@ -306,11 +321,11 @@
 
 <p>ただし、仮想環境のGUI操作やWebブラウジングなど、グラフィック処理を多用する作業では、動作が重く感じられる場合があります。特にWebブラウザの利用は、快適とは言えないレベルになることもあるため、用途を考慮した利用が推奨されます。</p>
 
-<h2 id="活用例ipadでlinuxデスクトップを動かす">活用例：iPadでLinuxデスクトップを動かす</h2>
+<h2 id="活用例ipadでlinux環境を楽しむ">活用例：iPadでLinux環境を楽しむ</h2>
 
-<p>UTM SEを使えば、iPad上でUbuntuやAlpine Linuxなどのデスクトップ環境を動かすことも夢ではありません。例えば、軽量なLXQtデスクトップ環境をインストールしたAlpine Linuxは、比較的スムーズに動作します。</p>
+<p>UTM SEを使えば、iPad上でUbuntuやAlpine LinuxなどのLinux環境を構築することも可能です。デスクトップ環境の導入も技術的には可能ですが、iPad上の仮想環境では快適とは言えず、実用性は低いのが現状です。</p>
 
-<p>これにより、iPadは単なるコンテンツ消費デバイスから、簡易的なプログラミングやドキュメント作成が可能な環境へと選択肢を広げます。場所を選ばずに、本格的なPC環境を持ち運べるロマンが、ここにあります。</p>
+<p>しかし、コマンドラインインターフェース(CUI)での作業や、プログラミング学習、あるいは軽量なサーバー環境の構築など、限定的ながらも様々な用途でLinuxを利用するロマンが、ここにあります。</p>
 
 <h2 id="まとめ">まとめ</h2>
 
